@@ -102,7 +102,7 @@ WhatWeb was used to identify technologies exposed by the website.
 
 The observed results included:
 
-- WordPress `7.0.4`
+- WordPress `7.1.1`
 - WP Download Manager `3.3.58`
 - Additional web-server and application information
 
@@ -127,6 +127,11 @@ Observed result:
 ```
 
 
+<img width="1920" height="955" alt="3-nslookup" src="https://github.com/user-attachments/assets/e415203c-4f26-473e-9437-c0af9cec9f57" />
+
+
+
+
 
 #### curl
 
@@ -148,7 +153,9 @@ The response provided additional information about the web service and indicated
 
 The presence of an endpoint does not by itself indicate a vulnerability. It should only be reviewed further within the approved testing scope.
 
-<img width="1920" height="955" alt="3-nslookup" src="https://github.com/user-attachments/assets/e415203c-4f26-473e-9437-c0af9cec9f57" />
+
+
+<img width="1227" height="843" alt="ncurlnetworkwalks" src="https://github.com/user-attachments/assets/d78decd9-a3ee-46b4-9cf6-406d294db6c8" />
 
 
 
@@ -173,6 +180,8 @@ This result identifies a possible security-control technology. It does not confi
 
 
 <img width="1920" height="955" alt="5-wafw00f" src="https://github.com/user-attachments/assets/189bfafc-4bdc-4f74-a63a-beaf8ae76786" />
+
+
 
 
 
@@ -241,6 +250,8 @@ The scan also returned MAC-address information for the discovered devices.
 
 **Evidence:** 
 
+
+
 <img width="1920" height="955" alt="Zenmap out" src="https://github.com/user-attachments/assets/26ad55a3-bf49-4351-8cb8-3474a0d6ce3a" />
 
 
@@ -267,7 +278,7 @@ The following observations were identified during the footprinting and network-d
 | 3 | HTTP response information was exposed | curl returned response headers and indicated `/wp-json/` | Response details may assist technology fingerprinting and authorized enumeration | Low |
 | 4 | WAF technology was identifiable | wafw00f indicated ModSecurity | This reveals information about the site’s visible defensive architecture | Low |
 | 5 | DNS infrastructure was publicly observable | DNSRecon identified DNS, mail, and service records | DNS data can help build a broader infrastructure profile | Medium |
-| 6 | Multiple hosts were visible on the local network | Zenmap identified four live hosts in the example network | Unknown or unauthorized devices may require investigation | Medium |
+| 6 | Multiple hosts were visible on the local network | Zenmap identified 2 live hosts in the network | Unknown or unauthorized devices may require investigation | Medium |
 
 
 
@@ -409,20 +420,50 @@ Most importantly, I learned that reconnaissance and scanning must always remain 
 
 ## 8. Evidence Collected
 
-<img width="1920" height="955" alt="2-whatweb" src="https://github.com/user-attachments/assets/74982801-a601-4788-b3fe-1d6cd3180d6c" /><img width="1920" height="955" alt="Zenmap Topology" src="https://github.com/user-attachments/assets/88811bd4-4cdd-4390-9181-ea5b8d18c443" />
+<img width="1920" height="955" alt="2-whatweb" src="https://github.com/user-attachments/assets/74982801-a601-4788-b3fe-1d6cd3180d6c" />
+
+
+
+
+<img width="1920" height="955" alt="Zenmap Topology" src="https://github.com/user-attachments/assets/88811bd4-4cdd-4390-9181-ea5b8d18c443" />
+
+
+
+
 <img width="1920" height="955" alt="Zenmap out" src="https://github.com/user-attachments/assets/81d63177-50b2-4a48-87ba-e6fcd772f47c" />
-[whois.txt](https://github.com/user-attachments/files/32418487/whois.txt)
-[whatweb.txt](https://github.com/user-attachments/files/32418486/whatweb.txt)
-[wafw00f.txt](https://github.com/user-attachments/files/32418485/wafw00f.txt)
-<img width="1920" height="955" alt="Screenshot_2026-09-19_11_00_59" src="https://github.com/user-attachments/assets/3c62de56-b4cb-49a2-b53e-a80147aba429" />
-<img width="1920" height="955" alt="Screenshot_2026-09-19_10_44_17" src="https://github.com/user-attachments/assets/2812f9b2-f9b7-4e11-a1f5-758076ec4309" />
-[nslookup.txt](https://github.com/user-attachments/files/32418483/nslookup.txt)
-[dnsrecon.txt](https://github.com/user-attachments/files/32418481/dnsrecon.txt)
-[curl.txt](https://github.com/user-attachments/files/32418480/curl.txt)
+
+
+
+
+<img width="1920" height="955" alt="Screenshot_2026-09-19_11_00_59" src="https://github.com/user-attachments/assets/3c62de56-b4cb-49a2-b53e-a80147aba429"/>
+
+
+
+
+<img width="1920" height="955" alt="Screenshot_2026-09-19_10_44_17" src="https://github.com/user-attachments/assets/2812f9b2-f9b7-4e11-a1f5-758076ec4309"/>
+
+
+
+
 <img width="1920" height="955" alt="6-dnsrecon" src="https://github.com/user-attachments/assets/48adaef8-1527-47be-b35f-b99a559f1d88" />
+
+
+
+
 <img width="1920" height="955" alt="5-wafw00f" src="https://github.com/user-attachments/assets/e03c5ea9-d667-49b3-9c38-9d02efd44cc4" />
+
+
+
+
 <img width="1920" height="955" alt="4-Curl" src="https://github.com/user-attachments/assets/0bbbdbf9-4305-4e7f-a0ad-380a76f4c093" />
+
+
+
+
 <img width="1920" height="955" alt="3-nslookup" src="https://github.com/user-attachments/assets/69183662-0b13-44ae-ab36-036f9fff5d22" />
+
+
+
 
 <img width="1920" height="955" alt="1-whois" src="https://github.com/user-attachments/assets/acab5f84-2f2a-40bc-a4c6-2601c4f5e118" />
 
