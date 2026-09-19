@@ -5,7 +5,7 @@ NetworkWalks Week 2 project covering authorized web footprinting, reconnaissance
 
 ## Footprinting, Reconnaissance, and Network Scanning
 
-**NetworkWalks Cybersecurity Program — Batch B083**
+**NetworkWalks Cybersecurity Program — Batch B083F**
 
 ---
 
@@ -98,7 +98,7 @@ Read the complete assessment report here:
 
 **Siphumelele Mtetwa**
 
-NetworkWalks Cybersecurity Program — Batch B083
+NetworkWalks Cybersecurity Program — Batch B083F
 
 ---
 
@@ -107,7 +107,7 @@ NetworkWalks Cybersecurity Program — Batch B083
 | Field | Details |
 |---|---|
 | **Program** | NetworkWalks Cybersecurity and Ethical Hacking |
-| **Batch** | B083 |
+| **Batch** | B083F |
 | **Week** | Week 2 |
 | **Project** | Footprinting and Network Scanning |
 | **Report Type** | Educational penetration-testing report |
